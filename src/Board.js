@@ -132,7 +132,7 @@
       let majorDiagonal = [];
       let index = majorDiagonalColumnIndexAtFirstRow;
 
-      for (let i = (1 - this.get('n')); i < (1 + this.get('n')); i++) {
+      for (let i = 0; i <this.get('n'); i++) {
         if (this.rows()[i] !== undefined) {
           majorDiagonal.push(this.rows()[i][i + index])
         }
